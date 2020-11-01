@@ -4,7 +4,7 @@ const Header = ({ header }) => {
   const { name, image, desgination, socialIcons } = header;
   return (
     <>
-      <header class='hero'>
+      <header class='hero' id="header">
         <div class='section-center hero-center'>
           <article class='hero-info'>
             <div class='underline'></div>

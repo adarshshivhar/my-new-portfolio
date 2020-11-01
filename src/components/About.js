@@ -1,15 +1,10 @@
 import React from 'react';
 
-const About = ({about}) => {
-  const {
-    describePart1,
-    describePart2,
-    aboutImg,
-    resume,
-  } = about;
+const About = ({ about }) => {
+  const { describePart1, describePart2, aboutImg, resume } = about;
   return (
     <>
-      <section class='section about'>
+      <section class='section about' id='about'>
         <div class='section-center about-center'>
           {/* -- about img -- */}
           <article class='about-img'>
@@ -25,7 +20,7 @@ const About = ({about}) => {
             {/* --end of section title -- */}
             <p>{describePart1}</p>
             <p>{describePart2}</p>
-            <a href={resume} class='btn' target="_blank">
+            <a href={resume} class='btn' target='_blank'>
               resume
             </a>
           </article>

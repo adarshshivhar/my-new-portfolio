@@ -3,7 +3,7 @@ import React from 'react';
 const Timeline = ({ education }) => {
   return (
     <>
-      <section class='section timeline'>
+      <section class='section timeline' id='education'>
         {/* -- section title -- */}
         <div class='section-title'>
           <h2>education</h2>

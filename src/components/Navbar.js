@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ sidebar }) => {
   const [sideBar, setSideBar] = useState('');
@@ -38,16 +39,49 @@ const Navbar = ({ sidebar }) => {
           {/* nav-links */}
           <ul className='nav-links'>
             <li>
-              <a href='index.html'>home</a>
+              <Link
+                to='header'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                home
+              </Link>
             </li>
             <li>
-              <a href='about.html'>about</a>
+              <Link
+                to='about'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                about
+              </Link>
+              {/* <a href='about.html'>about</a> */}
             </li>
             <li>
-              <a href='projects.html'>projects</a>
+              <Link
+                to='experience'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Experience
+              </Link>
             </li>
             <li>
-              <a href='contact.html'>contact</a>
+              <Link
+                to='skills'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                skills
+              </Link>
             </li>
           </ul>
         </div>
@@ -62,16 +96,65 @@ const Navbar = ({ sidebar }) => {
           {/* nav-links */}
           <ul className='sidebar-links'>
             <li>
-              <a href='index.html'>home</a>
+              <Link
+                to='header'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={toggleSideBar}
+              >
+                home
+              </Link>
             </li>
             <li>
-              <a href='about.html'>about</a>
+              <Link
+                to='about'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={toggleSideBar}
+              >
+                about
+              </Link>
+              {/* <a href='about.html'>about</a> */}
             </li>
             <li>
-              <a href='projects.html'>projects</a>
+              <Link
+                to='experience'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={toggleSideBar}
+              >
+                Experience
+              </Link>
             </li>
             <li>
-              <a href='contact.html'>contact</a>
+              <Link
+                to='skills'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={toggleSideBar}
+              >
+                skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='education'
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={toggleSideBar}
+              >
+                education
+              </Link>
             </li>
           </ul>
           {/*social icons */}

@@ -8,7 +8,7 @@ const Experience = ({experience}) => {
   const [value, setValue] = useState(0);
   const { company, dates, duties, title } = jobs[value];
   return (
-    <section className='section'>
+    <section className='section' id='experience'>
       <div className='title'>
         <h2>expierence</h2>
         <div className='underline'></div>
