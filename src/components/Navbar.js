@@ -1,16 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [sideBar, setSideBar] = useState('');
+  const [fix, setFix] = useState('');
 
   const toggleSideBar = () => {
     sideBar === '' ? setSideBar('show-sidebar') : setSideBar('');
   }
 
+  const fixNavbar = () => {
+      if (window.pageYOffset > 80) {
+          setFix('navbar-fixed');
+        } else {
+          setFix('');
+        }
+  }
+
+  useEffect(() => {
+      window.addEventListener('scroll', fixNavbar)
+      return () => {
+        window.removeEventListener('scroll', fixNavbar)  
+      }
+  })
   return (
     <>
       {/* Navbar */}
-      <nav className='nav'>
+      <nav className={`nav ${fix}`}>
         <div className='nav-center'>
           {/* nav header */}
           <div className='nav-header'>
