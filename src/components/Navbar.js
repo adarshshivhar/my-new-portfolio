@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ sidebar }) => {
   const [sideBar, setSideBar] = useState('');
   const [fix, setFix] = useState('');
 
   const toggleSideBar = () => {
     sideBar === '' ? setSideBar('show-sidebar') : setSideBar('');
-  }
+  };
 
   const fixNavbar = () => {
-      if (window.pageYOffset > 80) {
-          setFix('navbar-fixed');
-        } else {
-          setFix('');
-        }
-  }
+    if (window.pageYOffset > 80) {
+      setFix('navbar-fixed');
+    } else {
+      setFix('');
+    }
+  };
 
   useEffect(() => {
-      window.addEventListener('scroll', fixNavbar)
-      return () => {
-        window.removeEventListener('scroll', fixNavbar)  
-      }
-  })
+    window.addEventListener('scroll', fixNavbar);
+    return () => {
+      window.removeEventListener('scroll', fixNavbar);
+    };
+  });
+  const { socialIcons } = sidebar;
   return (
     <>
       {/* Navbar */}
@@ -75,31 +76,15 @@ const Navbar = () => {
           </ul>
           {/*social icons */}
           <ul className='social-icons'>
-            <li>
-              <a href='https://www.twitter.com' className='social-icon'>
-                <i className='fab fa-facebook'></i>
-              </a>
-            </li>
-            <li>
-              <a href='https://www.twitter.com' className='social-icon'>
-                <i className='fab fa-linkedin'></i>
-              </a>
-            </li>
-            <li>
-              <a href='https://www.twitter.com' className='social-icon'>
-                <i className='fab fa-squarespace'></i>
-              </a>
-            </li>
-            <li>
-              <a href='https://www.twitter.com' className='social-icon'>
-                <i className='fab fa-behance'></i>
-              </a>
-            </li>
-            <li>
-              <a href='https://www.twitter.com' className='social-icon'>
-                <i className='fab fa-instagram'></i>
-              </a>
-            </li>
+            {socialIcons.map((item) => {
+              return (
+                <li key={item.id}>
+                  <a href={item.link} class='social-icon' target='_blank'>
+                    <i class={`fab fa-${item.icon}`}></i>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </aside>

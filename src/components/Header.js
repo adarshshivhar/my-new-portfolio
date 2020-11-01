@@ -1,44 +1,29 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({ header }) => {
+  const { name, image, desgination, socialIcons } = header;
   return (
     <>
       <header class='hero'>
         <div class='section-center hero-center'>
           <article class='hero-info'>
             <div class='underline'></div>
-            <h1>i'm john</h1>
-            <h4>freelance web & mobile UI/UX Designer</h4>
+            <h1>i'm {name}</h1>
+            <h4>{desgination}</h4>
             <a href='contact.html' class='btn hero-btn'>
               hire me
             </a>
             {/* -- social icons -- */}
             <ul class='social-icons hero-icons'>
-              <li>
-                <a href='https://www.twitter.com' class='social-icon'>
-                  <i class='fab fa-facebook'></i>
-                </a>
-              </li>
-              <li>
-                <a href='https://www.twitter.com' class='social-icon'>
-                  <i class='fab fa-linkedin'></i>
-                </a>
-              </li>
-              <li>
-                <a href='https://www.twitter.com' class='social-icon'>
-                  <i class='fab fa-squarespace'></i>
-                </a>
-              </li>
-              <li>
-                <a href='https://www.twitter.com' class='social-icon'>
-                  <i class='fab fa-behance'></i>
-                </a>
-              </li>
-              <li>
-                <a href='https://www.twitter.com' class='social-icon'>
-                  <i class='fab fa-instagram'></i>
-                </a>
-              </li>
+              {socialIcons.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <a href={item.link} class='social-icon' target='_blank'>
+                      <i class={`fab fa-${item.icon}`}></i>
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </article>
           <article class='hero-img'>
