@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import About from './components/About';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
@@ -18,6 +19,7 @@ function App() {
       <Experience experience={experienceSection} />
       <Skills skills={skillsSection} />
       <Timeline education={educationSection} />
+      <Footer footer={headerSection}/>
     </>
   );
 }
