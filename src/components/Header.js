@@ -8,6 +8,7 @@ const Header = ({ header }) => {
         <div class='section-center hero-center'>
           <article class='hero-info'>
             <div class='underline'></div>
+            <h1>Hi,</h1>
             <h1>i'm {name}</h1>
             <h4>{desgination}</h4>
             <a href='contact.html' class='btn hero-btn'>
