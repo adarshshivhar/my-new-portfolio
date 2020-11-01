@@ -10,17 +10,17 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav class='nav'>
-        <div class='nav-center'>
+      <nav className='nav'>
+        <div className='nav-center'>
           {/* nav header */}
-          <div class='nav-header'>
-            <i class='fas fa-code nav-logo'></i>
-            <button class='nav-btn' type='submit' onClick={toggleSideBar}>
-              <i class='fas fa-bars'></i>
+          <div className='nav-header'>
+            <i className='fas fa-code nav-logo'></i>
+            <button className='nav-btn' type='submit' onClick={toggleSideBar}>
+              <i className='fas fa-bars'></i>
             </button>
           </div>
           {/* nav-links */}
-          <ul class='nav-links'>
+          <ul className='nav-links'>
             <li>
               <a href='index.html'>home</a>
             </li>
@@ -38,13 +38,13 @@ const Navbar = () => {
       </nav>
       {/* Navbar End */}
       {/* Sidebar */}
-      <aside class={`sidebar ${sideBar}`}>
+      <aside className={`sidebar ${sideBar}`}>
         <div>
-          <button class='close-btn' onClick={toggleSideBar}>
-            <i class='fas fa-times'></i>
+          <button className='close-btn' onClick={toggleSideBar}>
+            <i className='fas fa-times'></i>
           </button>
           {/* nav-links */}
-          <ul class='sidebar-links'>
+          <ul className='sidebar-links'>
             <li>
               <a href='index.html'>home</a>
             </li>
@@ -59,30 +59,30 @@ const Navbar = () => {
             </li>
           </ul>
           {/*social icons */}
-          <ul class='social-icons'>
+          <ul className='social-icons'>
             <li>
-              <a href='https://www.twitter.com' class='social-icon'>
-                <i class='fab fa-facebook'></i>
+              <a href='https://www.twitter.com' className='social-icon'>
+                <i className='fab fa-facebook'></i>
               </a>
             </li>
             <li>
-              <a href='https://www.twitter.com' class='social-icon'>
-                <i class='fab fa-linkedin'></i>
+              <a href='https://www.twitter.com' className='social-icon'>
+                <i className='fab fa-linkedin'></i>
               </a>
             </li>
             <li>
-              <a href='https://www.twitter.com' class='social-icon'>
-                <i class='fab fa-squarespace'></i>
+              <a href='https://www.twitter.com' className='social-icon'>
+                <i className='fab fa-squarespace'></i>
               </a>
             </li>
             <li>
-              <a href='https://www.twitter.com' class='social-icon'>
-                <i class='fab fa-behance'></i>
+              <a href='https://www.twitter.com' className='social-icon'>
+                <i className='fab fa-behance'></i>
               </a>
             </li>
             <li>
-              <a href='https://www.twitter.com' class='social-icon'>
-                <i class='fab fa-instagram'></i>
+              <a href='https://www.twitter.com' className='social-icon'>
+                <i className='fab fa-instagram'></i>
               </a>
             </li>
           </ul>
