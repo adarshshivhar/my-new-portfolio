@@ -1,13 +1,19 @@
 import React from 'react';
 
-const About = () => {
+const About = ({about}) => {
+  const {
+    describePart1,
+    describePart2,
+    aboutImg,
+    resume,
+  } = about;
   return (
     <>
       <section class='section about'>
         <div class='section-center about-center'>
           {/* -- about img -- */}
           <article class='about-img'>
-            <img src='./images/hero-1.jpg' class='hero-photo' alt='about img' />
+            <img src={aboutImg} class='hero-photo' alt='about img' />
           </article>
           {/* -- about info -- */}
           <article class='about-info'>
@@ -17,22 +23,10 @@ const About = () => {
               <div class='underline'></div>
             </div>
             {/* --end of section title -- */}
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-              quae, eum maiores est enim earum fugiat aspernatur. Fuga qui iste
-              amet reiciendis possimus rerum omnis recusandae molestias error
-              consequuntur, doloribus inventore reprehenderit officiis. Dolore
-              aut, repellendus eius fugiat numquam cumque.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-              quae, eum maiores est enim earum fugiat aspernatur. Fuga qui iste
-              amet reiciendis possimus rerum omnis recusandae molestias error
-              consequuntur, doloribus inventore reprehenderit officiis. Dolore
-              aut, repellendus eius fugiat numquam cumque.
-            </p>
-            <a href='about.html' class='btn'>
-              about me
+            <p>{describePart1}</p>
+            <p>{describePart2}</p>
+            <a href={resume} class='btn' target="_blank">
+              resume
             </a>
           </article>
         </div>

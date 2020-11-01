@@ -12,12 +12,12 @@ function App() {
   const {headerSection, aboutSection, experienceSection, skillsSection, educationSection} = details;
   return (
     <>
-      <Navbar sidebar={headerSection}/>
-      <Header header={headerSection}/>
-      <About />
-      <Experience />
-      <Skills />
-      <Timeline />
+      <Navbar sidebar={headerSection} />
+      <Header header={headerSection} />
+      <About about={aboutSection} />
+      <Experience experience={experienceSection} />
+      <Skills skills={skillsSection} />
+      <Timeline education={educationSection} />
     </>
   );
 }
