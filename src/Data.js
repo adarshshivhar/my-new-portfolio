@@ -38,7 +38,7 @@ const info = {
                             movies and television shows. I spend a lot of my free time exploring the latest technological advancements 
                             in the web development world.`,
     aboutImg:
-      'https://scontent.fpnq10-1.fna.fbcdn.net/v/t1.0-9/42424433_2030798756964010_1842113955745497088_o.jpg?_nc_cat=109&ccb=2&_nc_sid=174925&_nc_ohc=4X8-eLvMmEoAX-mqtjQ&_nc_ht=scontent.fpnq10-1.fna&oh=e7c6eacb41c6308d6075002e978f9701&oe=5FC5A215',
+      'https://scontent.frpr2-1.fna.fbcdn.net/v/t1.0-9/42424433_2030798756964010_1842113955745497088_o.jpg?_nc_cat=109&ccb=2&_nc_sid=174925&_nc_ohc=qRDSjD1Ify0AX_NZ1IA&_nc_ht=scontent.frpr2-1.fna&oh=07788e6cc06fd877f0f1dc03bfe52d41&oe=5FED2F15',
     //
 
     resume:
