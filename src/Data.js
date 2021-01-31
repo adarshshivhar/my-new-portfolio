@@ -31,14 +31,15 @@ const info = {
           I hold MTech(ICT) specialization in Software Engineering and Databases, 
           Degree from Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT), Gandhinagar, Gujarat.`,
 
-    describePart2: `I am a Web Developer Enthusiast, always keen to learn new technologies related to Web development, 
-                            and want to see myself as a Full Stack Developer in the Future. Other than Technical background, 
+    describePart2: `Over the course of my internship, master's and bachelor's, I have done various projects and developed a keen interest in building the best product for customers. 
+                    I am well versed in technologies like Java, JavaScript, Angular, Spring Boot, SQL, REST API, GIT, which I have extensively 
+                     used throughout the project development phases. Other than Technical background, 
                             I love traveling and exploring new places and, more importantly, a Team Player. I also participated 
                             in many cricket tournaments during my University time. I follow a number of sci-fi and fantasy genre 
                             movies and television shows. I spend a lot of my free time exploring the latest technological advancements 
                             in the web development world.`,
     aboutImg:
-      'https://scontent.frpr2-1.fna.fbcdn.net/v/t1.0-9/42424433_2030798756964010_1842113955745497088_o.jpg?_nc_cat=109&ccb=2&_nc_sid=174925&_nc_ohc=qRDSjD1Ify0AX_NZ1IA&_nc_ht=scontent.frpr2-1.fna&oh=07788e6cc06fd877f0f1dc03bfe52d41&oe=5FED2F15',
+      'https://scontent.fbho1-2.fna.fbcdn.net/v/t1.0-9/42424433_2030798756964010_1842113955745497088_o.jpg?_nc_cat=109&ccb=2&_nc_sid=174925&_nc_ohc=p0vmrd0MMSkAX9Nt16R&_nc_ht=scontent.fbho1-2.fna&oh=ae6c7532ea9e7470eb5a030680810147&oe=603C4915',
     //
 
     resume:
